@@ -15,7 +15,7 @@ try {
     ps.setString(2, location);
     ps.setString(3, slots);
     ps.setBoolean(4, status);
-    
+
     int x=ps.executeUpdate();
     if(x!=0) {
         out.print("User registered successfully");
