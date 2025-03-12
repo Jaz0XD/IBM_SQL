@@ -9,7 +9,7 @@ Boolean status = request.getParameter("status");
 
 
 try {
-    Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "root", "root");
+    Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "username", "password");
     PreparedStatement ps = conn.prepareStatement("insert into users(name, location, slots, status) values(?,?,?,?)");
     ps.setString(1, name);
     ps.setString(2, location);
