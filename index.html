@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>EV Charging Station Entry</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>EV Charging Station Entry</h2>
+        <form action="insert.php" method="POST">
+            <label for="name">Station Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="slots">Available Slots:</label>
+            <input type="number" id="slots" name="slots" min="0" required>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+
+            <button type="submit">Add Charging Station</button>
+        </form>
+    </div>
+</body>
+</html>
